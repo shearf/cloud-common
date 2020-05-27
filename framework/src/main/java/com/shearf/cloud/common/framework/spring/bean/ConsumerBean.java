@@ -41,6 +41,7 @@ public class ConsumerBean<T> implements FactoryBean<T>, DisposableBean, Applicat
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public T getObject() throws Exception {
         String interfaceUrl = "http://" + provider + "/" + interfaceClass.getTypeName();
         RestTemplate restTemplate = applicationContext.getBean("restTemplate", RestTemplate.class);
