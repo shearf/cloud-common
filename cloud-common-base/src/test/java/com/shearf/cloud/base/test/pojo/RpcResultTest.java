@@ -2,7 +2,6 @@ package com.shearf.cloud.base.test.pojo;
 
 import com.shearf.cloud.base.pojo.BaseDTO;
 import com.shearf.cloud.base.pojo.RpcResult;
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 import org.junit.jupiter.api.Test;
 
 /**
