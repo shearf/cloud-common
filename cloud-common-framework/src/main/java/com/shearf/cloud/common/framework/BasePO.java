@@ -18,7 +18,7 @@ import java.util.Date;
  */
 @Setter
 @Getter
-abstract public class BaseEntity {
+abstract public class BasePO implements Serializable {
 
     /**
      * 主键

@@ -1,4 +1,4 @@
-package com.shearf.cloud.base;
+package com.shearf.cloud.base.pojo;
 
 /**
  * @author xiahaihu2009@gmail.com
@@ -8,10 +8,19 @@ package com.shearf.cloud.base;
  */
 public abstract class BaseResult<T> implements IResult<T> {
 
+    /**
+     * 错误码
+     */
     protected int code;
 
+    /**
+     * 错误信息
+     */
     protected String message;
 
+    /**
+     * 数据实体
+     */
     protected T data;
 
     @Override

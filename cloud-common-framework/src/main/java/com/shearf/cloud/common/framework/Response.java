@@ -1,6 +1,6 @@
 package com.shearf.cloud.common.framework;
 
-import com.shearf.cloud.base.IResult;
+import com.shearf.cloud.base.pojo.IResult;
 
 /**
  * @author xiahaihu2009@gmail.com

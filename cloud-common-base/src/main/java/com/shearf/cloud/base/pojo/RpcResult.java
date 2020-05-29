@@ -1,9 +1,8 @@
-package com.shearf.cloud.base;
+package com.shearf.cloud.base.pojo;
 
 import com.shearf.cloud.base.error.IError;
 import org.apache.commons.lang3.builder.ToStringBuilder;
-
-import java.io.Serializable;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * @author xiahaihu2009@gmail.com

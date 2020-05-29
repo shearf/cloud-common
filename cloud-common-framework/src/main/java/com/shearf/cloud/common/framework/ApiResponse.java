@@ -1,7 +1,8 @@
 package com.shearf.cloud.common.framework;
 
-import com.shearf.cloud.base.BaseResult;
+import com.shearf.cloud.base.pojo.BaseResult;
 import com.shearf.cloud.base.error.IError;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
  * @author xiahaihu2009@gmail.com
@@ -56,5 +57,14 @@ public class ApiResponse<T> extends BaseResult<T> implements Response<T> {
 
     public static <T> ApiResponse<T> fail(int code, String message) {
         return new ApiResponse<>(code, message);
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this)
+                .append("code", code)
+                .append("message", message)
+                .append("data", data)
+                .toString();
     }
 }

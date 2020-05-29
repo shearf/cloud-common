@@ -1,4 +1,4 @@
-package com.shearf.cloud.base;
+package com.shearf.cloud.base.pojo;
 
 import java.io.Serializable;
 
