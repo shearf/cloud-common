@@ -20,7 +20,7 @@ public enum DelEnum {
 
     ;
 
-    private int del;
+    private final int del;
 
     DelEnum(int del) {
         this.del = del;
