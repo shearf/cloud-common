@@ -5,9 +5,10 @@ import com.shearf.cloud.base.error.IError;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
+ * API请求
+ *
  * @author xiahaihu2009@gmail.com
  * @version 0.0.1
- * @description TODO
  * @since 2020/1/7 16:37
  */
 public class ApiResponse<T> extends BaseResult<T> implements Response<T> {

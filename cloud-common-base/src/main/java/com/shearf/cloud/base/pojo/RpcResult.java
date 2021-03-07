@@ -5,9 +5,10 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
+ *
+ *
  * @author xiahaihu2009@gmail.com
  * @version 0.0.1
- * @description TODO
  * @since 2020/1/8 11:17
  */
 public class RpcResult<T> extends BaseResult<T> {
@@ -23,9 +24,9 @@ public class RpcResult<T> extends BaseResult<T> {
         this.code = code;
         String message = "";
         if (IError.SUCCESS_CODE == code) {
-            message = "操作成功";
+            message = IError.SUCCESS_MESSAGE;
         } else if (IError.FAIL_CODE == code) {
-            message = "操作失败";
+            message = IError.FAIL_MESSAGE;
         }
         this.message = message;
     }
@@ -37,7 +38,7 @@ public class RpcResult<T> extends BaseResult<T> {
 
     public RpcResult(T data) {
         this.code = IError.SUCCESS_CODE;
-        this.message = "";
+        this.message = IError.SUCCESS_MESSAGE;
         this.data = data;
     }
 

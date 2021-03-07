@@ -7,16 +7,10 @@
     <modules>
         <module>cloud-common-base</module>
         <module>cloud-common-framework</module>
+        <module>cloud-common-dependencies</module>
     </modules>
-
-    <parent>
-        <groupId>com.shearf.cloud</groupId>
-        <artifactId>cloud-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+    <groupId>com.shearf.cloud</groupId>
     <artifactId>cloud-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
 
 </project>

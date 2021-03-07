@@ -14,9 +14,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * 为服务提供者定制http请求的绑定关系
+ *
  * @author xiahaihu2009@gmail.com
  * @version 0.0.1
- * @description 为服务提供者定制http请求的绑定关系
  * @since 2020/1/21 11:45
  */
 @Slf4j

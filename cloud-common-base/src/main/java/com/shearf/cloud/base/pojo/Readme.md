@@ -2,8 +2,8 @@
 
 ## 说明
 
- - BaseDTO
- - BasePO
+- BaseDTO
+- BasePO
 
 ### BaseDTO
 
