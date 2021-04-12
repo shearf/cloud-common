@@ -8,9 +8,10 @@ import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.lang.NonNull;
 
 /**
+ *
+ *
  * @author xiahaihu2009@gmail.com
  * @version 0.0.1
- * @description TODO
  * @since 2020/1/17 14:49
  */
 public class ConsumerComponentRegister implements ImportBeanDefinitionRegistrar {

@@ -8,7 +8,7 @@ import java.lang.annotation.*;
 /**
  * @author xiahaihu2009@gmail.com
  * @version 0.0.1
- * @description TODO
+ * @description 服务提供者标示
  * @since 2020/1/9 00:55
  */
 @Target({ElementType.TYPE})

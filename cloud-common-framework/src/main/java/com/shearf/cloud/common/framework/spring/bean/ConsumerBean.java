@@ -71,9 +71,9 @@ public class ConsumerBean<T> implements FactoryBean<T>, DisposableBean, Applicat
 
     private static class ConsumerInvocationHandler implements InvocationHandler {
 
-        private RestTemplate restTemplate;
+        private final RestTemplate restTemplate;
 
-        private String interfaceUrl;
+        private final String interfaceUrl;
 
         public ConsumerInvocationHandler(RestTemplate restTemplate, String interfaceUrl) {
             this.restTemplate = restTemplate;

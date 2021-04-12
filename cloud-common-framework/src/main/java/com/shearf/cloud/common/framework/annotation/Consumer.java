@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 /**
  * @author xiahaihu2009@gmail.com
  * @version 0.0.1
- * @description TODO
+ * @description 消费者标示
  * @since 2020/1/15 17:00
  */
 @Target({ElementType.FIELD})

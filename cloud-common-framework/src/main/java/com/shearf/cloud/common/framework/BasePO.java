@@ -11,9 +11,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
+ * 数据库实体对象基类
+ *
  * @author xiahaihu2009@gmail.com
  * @version 0.0.1
- * @description 数据库实体对象基类
  * @since 2019/12/2 20:21
  */
 @Setter
