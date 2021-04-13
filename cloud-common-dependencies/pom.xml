@@ -28,10 +28,14 @@
         <commons-io.version>2.8.0</commons-io.version>
         <fastjson.version>1.2.76</fastjson.version>
 
-        <!-- -->
-        <cloud-common-base.version>0.0.1-SNAPSHOT</cloud-common-base.version>
+        <druid.version>1.2.5</druid.version>
+        <mysql-connector-java.version>8.0.23</mysql-connector-java.version>
 
+        <!-- 项目组件 -->
+        <cloud-common-base.version>0.0.1-SNAPSHOT</cloud-common-base.version>
+        <cloud-common-framework.version>0.0.1-SNAPSHOT</cloud-common-framework.version>
     </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -63,17 +67,6 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>com.shearf.cloud</groupId>
-                <artifactId>cloud-common-base</artifactId>
-                <version>${cloud-common-base.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus</artifactId>
-                <version>${mybatis-plus.version}</version>
-            </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
@@ -83,6 +76,50 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.shearf.cloud</groupId>
+                <artifactId>cloud-common-base</artifactId>
+                <version>${cloud-common-base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.shearf.cloud</groupId>
+                <artifactId>cloud-common-framework</artifactId>
+                <version>${cloud-common-framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.junit.vintage</groupId>
+                        <artifactId>junit-vintage-engine</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
