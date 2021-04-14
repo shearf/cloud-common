@@ -1,5 +1,6 @@
 package com.shearf.cloud.common.framework;
 
+import com.shearf.cloud.base.error.GlobalError;
 import com.shearf.cloud.base.pojo.BaseResult;
 import com.shearf.cloud.base.error.IError;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -16,7 +17,7 @@ public class ApiResponse<T> extends BaseResult<T> implements Response<T> {
     private static final long serialVersionUID = 4036500041349413244L;
 
     public ApiResponse() {
-        this.code = IError.FAIL_CODE;
+        this.code = GlobalError.FAIL.getErrCode();
     }
 
     public ApiResponse(int code, String message) {
@@ -35,16 +36,16 @@ public class ApiResponse<T> extends BaseResult<T> implements Response<T> {
 
     public ApiResponse(T data) {
         this.data = data;
-        this.code = IError.SUCCESS_CODE;
+        this.code = GlobalError.SUCCESS.getErrCode();
     }
 
     @Override
     public boolean isSuccess() {
-        return code == IError.SUCCESS_CODE;
+        return code == GlobalError.SUCCESS.getErrCode();
     }
 
     public static <T> ApiResponse<T> success() {
-        return new ApiResponse<>(IError.SUCCESS_CODE);
+        return new ApiResponse<>(GlobalError.SUCCESS.getErrCode());
     }
 
     public static <T> ApiResponse<T> success(T data) {

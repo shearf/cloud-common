@@ -1,5 +1,6 @@
 package com.shearf.cloud.base.pojo;
 
+import com.shearf.cloud.base.error.GlobalError;
 import com.shearf.cloud.base.error.IError;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
@@ -16,17 +17,17 @@ public class RpcResult<T> extends BaseResult<T> {
     private static final long serialVersionUID = 141971695531890787L;
 
     public RpcResult() {
-        this.code = IError.FAIL_CODE;
-        this.message = "操作失败";
+        this.code = GlobalError.FAIL.getErrCode();
+        this.message = GlobalError.FAIL.getErrMsg();
     }
 
     public RpcResult(int code) {
         this.code = code;
         String message = "";
-        if (IError.SUCCESS_CODE == code) {
-            message = IError.SUCCESS_MESSAGE;
-        } else if (IError.FAIL_CODE == code) {
-            message = IError.FAIL_MESSAGE;
+        if (GlobalError.SUCCESS.getErrCode() == code) {
+            message = GlobalError.SUCCESS.getErrMsg();
+        } else if (GlobalError.FAIL.getErrCode() == code) {
+            message = GlobalError.FAIL.getErrMsg();
         }
         this.message = message;
     }
@@ -37,14 +38,14 @@ public class RpcResult<T> extends BaseResult<T> {
     }
 
     public RpcResult(T data) {
-        this.code = IError.SUCCESS_CODE;
-        this.message = IError.SUCCESS_MESSAGE;
+        this.code = GlobalError.SUCCESS.getErrCode();
+        this.message = GlobalError.SUCCESS.getErrMsg();
         this.data = data;
     }
 
     @Override
     public boolean isSuccess() {
-        return code == IError.SUCCESS_CODE;
+        return code == GlobalError.SUCCESS.getErrCode();
     }
 
     public static <T> RpcResult<T> success() {
@@ -56,7 +57,7 @@ public class RpcResult<T> extends BaseResult<T> {
     }
 
     public static <T> RpcResult<T> fail() {
-        return new RpcResult<>(IError.FAIL_CODE);
+        return new RpcResult<>(GlobalError.FAIL.getErrCode());
     }
 
     public static <T> RpcResult<T> fail(int code, String message) {

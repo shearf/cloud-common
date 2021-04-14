@@ -10,26 +10,6 @@ package com.shearf.cloud.base.error;
 public interface IError {
 
     /**
-     * 成功
-     */
-    int SUCCESS_CODE = 1;
-
-    /**
-     * 失败
-     */
-    int FAIL_CODE = 0;
-
-    /**
-     * 默认操作成功提示
-     */
-    String SUCCESS_MESSAGE = "操作成功";
-
-    /**
-     * 默认操作失败提示
-     */
-    String FAIL_MESSAGE = "操作失败";
-
-    /**
      * 获得错误码
      *
      * @return 错误码
