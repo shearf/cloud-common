@@ -21,7 +21,7 @@
         <spring-cloud-alibaba-dependencies.version>2.2.5.RELEASE</spring-cloud-alibaba-dependencies.version>
 
         <!-- 组件 -->
-        <dubbo.version>2.7.8</dubbo.version>
+        <dubbo.version>2.7.15</dubbo.version>
         <javassist.version>3.27.0-GA</javassist.version>
         <commons-lang3.version>3.11</commons-lang3.version>
         <mybatis-plus.version>3.4.2</mybatis-plus.version>
