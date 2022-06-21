@@ -29,7 +29,7 @@
         <fastjson.version>1.2.76</fastjson.version>
 
         <druid.version>1.2.5</druid.version>
-        <mysql-connector-java.version>8.0.23</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.28</mysql-connector-java.version>
 
         <!-- 项目组件 -->
         <cloud-common-base.version>0.0.1-SNAPSHOT</cloud-common-base.version>
